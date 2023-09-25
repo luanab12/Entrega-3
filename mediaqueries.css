@@ -80,6 +80,7 @@
   /* INFO EMPRESA */
   .Info-empresa {
     max-width: 300px;
-    font-size: 16px;
+    font-size: 14px;
+    width: 50%;
   }
 }
