@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Entrega-3</title>
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <title>Entrega</title>
   </head>
   <body>
     <header>
       <img src="./img/logo1.png" alt="" class="img-logo" />
       <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./img/menu.png" alt="Menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li class="nav-link"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#">Productos</a></li>
@@ -41,7 +46,7 @@
           <img src="./img/lampara2.webp" alt="" class="img-lampara" />
         </div>
       </section>
-      <section>
+      <section id="Texto">
         <div class="Info-empresa">
           Nuestra empresa de lámparas tiene una historia de más de tres décadas,
           comenzando como un taller artesanal con un enfoque en la calidad y la
@@ -63,17 +68,60 @@
             <p>Tus compras son despachas durante las 24hs laborales</p>
           </div>
           <div class="info-card">
-            <img src="./img/tarjeta-de-credito.png" alt="Icono envio" />
+            <img src="./img/tarjeta-de-credito.png" alt="Tarjeta de credito" />
             <h3>Cuotas sin interés</h3>
             <p>Ofrecemos hasta 12 cuotas sin interés</p>
           </div>
           <div class="info-card">
-            <img src="./img/destellos-de-mano.png" alt="Icono envio" />
+            <img src="./img/destellos-de-mano.png" alt="Mano" />
             <h3>Trabajo artesanal</h3>
             <p>Contamos con diseños exclusivos en el mercado</p>
           </div>
         </div>
       </section>
+      <section id="Contacto">
+        <div class="contacto-container">
+          <h2>Contactanos:</h2>
+          <div class="contacto-info">
+            <ul class="lista-contactos">
+              <li>
+                <div class="contact">
+                  <img src="./img/circulo-de-telefono.png" alt="telefono" />
+                  <span>01122338899</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact">
+                  <img src="./img/circulo-sobre.png" alt="mail" />
+                  <span>somoslumina@gmail.com</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact">
+                  <img src="./img/instagram.png" alt="Instagram" />
+                  <span>@somoslumina</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="Mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460.8513480422899!2d-58.42615226866776!3d-34.589618270665845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5879a629731%3A0x69e160f78198dbb3!2sEl%20Salvador%204653%2C%20C1414BPI%20CABA!5e0!3m2!1ses!2sar!4v1695675358899!5m2!1ses!2sar"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
+    <footer>
+      <div>
+        <p>Hecho con ❤️ por Luana Barrios.</p>
+      </div>
+    </footer>
   </body>
 </html>

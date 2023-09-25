@@ -16,10 +16,19 @@
   --Secondary: #f4c2c2;
   --Font: #efe7f0;
   --Nav-bar: #7c706a;
+  --Font-brown: #3f2817;
 }
 
 body {
-  background-color: var(--Background);
+  background-color: #a89b9d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23816c61' fill-opacity='0.14' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* =============HEADER============= */
+
+#menu-toggle,
+.menu-label {
+  display: none;
 }
 
 header {
@@ -64,6 +73,7 @@ ul a {
   cursor: pointer;
 }
 
+/* =============MAIN============= */
 main {
   display: flex;
   flex-direction: column;
@@ -71,6 +81,8 @@ main {
   align-items: center;
   width: 100%;
 }
+
+/* =============HERO============= */
 
 #Hero {
   margin-top: 75px;
@@ -123,14 +135,23 @@ a {
   max-width: 400px;
 }
 
-.Info-empresa {
-  text-align: center;
-  font-size: 14px;
-  color: var(--Nav-bar);
-  width: 1000px;
+.img-lampara {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/*INFO CARD*/
+/* =============INFO EMPRESA============= */
+
+.Info-empresa {
+  text-align: center;
+  font-size: 16px;
+  color: var(--Font-brown);
+  max-width: 1000px;
+  margin: 100px;
+  display: flex;
+}
+
+/* =============INFO CARD============= */
 
 #info {
   padding: 70px 0;
@@ -145,7 +166,12 @@ a {
 #info h2 {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: -20px;
+  margin-bottom: -50px;
+  color: var(--Font);
+}
+
+#info h3 {
+  font-weight: 600;
 }
 
 .info-card {
@@ -160,9 +186,64 @@ a {
   max-width: 300px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: var(--Font);
 }
 
 .card-container {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* =============CONTACTO============= */
+
+#Contacto {
+  display: flex;
+  justify-content: center;
+  margin: 90px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.contacto-container {
+  align-items: center;
+  display: inline-block;
+}
+
+#Contacto h2 {
+  color: var(--Font);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 20px;
+}
+
+.lista-contactos {
+  display: flex;
+  gap: 70px;
+}
+
+.contact {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--Font-brown);
+}
+
+/* =============MAPA============= */
+
+#Mapa {
+  width: 100%;
+}
+
+/* =============FOOTER============= */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-size: 12px;
+  color: var(--Font-brown);
 }
